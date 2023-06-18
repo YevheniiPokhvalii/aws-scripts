@@ -1,0 +1,30 @@
+{
+    "Version": "2008-10-17",
+    "Statement": [
+      {
+        "Sid": "access-control-policy",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::xxxxxxxxxxxxx:root"
+        },
+        "Action": [
+          "ecr:BatchCheckLayerAvailability",
+          "ecr:BatchGetImage",
+          "ecr:CompleteLayerUpload",
+          "ecr:DescribeImages",
+          "ecr:DescribeRepositories",
+          "ecr:GetDownloadUrlForLayer",
+          "ecr:GetLifecyclePolicy",
+          "ecr:GetLifecyclePolicyPreview",
+          "ecr:GetRepositoryPolicy",
+          "ecr:InitiateLayerUpload",
+          "ecr:ListImages",
+          "ecr:PutImage",
+          "ecr:PutLifecyclePolicy",
+          "ecr:SetRepositoryPolicy",
+          "ecr:StartLifecyclePolicyPreview",
+          "ecr:UploadLayerPart"
+        ]
+      }
+    ]
+  }
